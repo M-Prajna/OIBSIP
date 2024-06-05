@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Travel<span>Us</span></div>
+            <ul class="nav-links">
+                <li class="btn"><a href="#home">Home</a></li>
+                <li class="btn"><a href="#destinations">Destinations</a></li>
+                <li class="btn"><a href="#services">Services</a></li>
+                <li class="btn"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    <section id="home" class="hero">
+        <h1>Explore Your <span>Dream</span> Destination.</h1>
+        <p>Discover amazing places at exclusive deals</p>
+        <a href="#destinations" class="btn">Explore Now</a>
+    </section>
+</header>
+    <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destinations-grid">
+            <div class="destination">
+                <img src="./images/Paris.jpg" alt="Destination 1">
+                <h3>Paris, France</h3>
+            </div>
+            <div class="destination">
+                <img src="./images/Bali.jpg" alt="Destination 2">
+                <h3>Bali, Indonesia</h3>
+            </div>
+            <div class="destination">
+                <img src="./images/Tokyo.jpg" alt="Destination 3">
+                <h3>Tokyo, Japan</h3>
+            </div>
+            <div class="destination">
+                <img src="./images/Bangkok.jpg" alt="Destination 3">
+                <h3>Bangkok,Thailand</h3>
+            </div>
+            <div class="destination">
+                <img src="./images/Bohol.jpg" alt="Destination 3">
+                <h3>Chocolate Hills,Philippines</h3>
+            </div>
+            <div class="destination">
+                <img src="./images/Maldives.jpg" alt="Destination 3">
+                <h3>Sun Siyam Olhuveli,Maldives</h3>
+            </div>
+            <div class="destination">
+                <img src="./images/Switzerland.jpg" alt="Destination 3">
+                <h3>Chillon Castle,Switzerland</h3>
+            </div>
+            <div class="destination">
+                <img src="./images/China.jpg" alt="Destination 3">
+                <h3>Shanghai Tower,China</h3>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>Travel Planning</h3>
+                <p>Personalized travel itineraries to suit your preferences.</p>
+            
+                <!-- Featured Destinations -->
+                <div class="featured-destinations">
+                    <div class="destination">
+                        <img src="./images/Destination.jpg" alt="Destination Image">
+                        <h4>Destination Name</h4>
+                        <p>Description of the destination.</p>
+                        <button onclick="window.location.href = '#destinations'">Explore</button>
+                    </div>
+                    <!-- Add more destinations as needed -->
+                </div>
+            
+                <!-- Trip Planner Form -->
+                <form class="trip-planner-form" action="plan_trip_action" method="POST">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter destination">
+                    <label for="preferences">Preferences:</label>
+                    <textarea id="preferences" name="preferences" placeholder="Enter your preferences"></textarea>
+                    <button type="submit">Plan My Trip</button>
+                </form>
+            </div>
+            
+            <div class="service">
+                <h3>Accommodation Booking</h3>
+                <p>Find the best places to stay at your destination.</p>
+            
+                <!-- Featured Listings -->
+                <div class="featured-listings">
+                    <div class="listing">
+                        <img src="./images/Hotel.jpg" alt="Accommodation Image">
+                        <h4>Hotel Name</h4>
+                        <p>Location: BLR, India</p>
+                        <p>Price: 8000&#8377;/night</p>
+                        <button onclick="window.location.href = 'https://www.itchotels.com/in/en/itcgardenia-bengaluru'">Book Now</button>
+                    </div>
+                    <!-- Add more listings as needed -->
+                </div>
+            
+                <!-- Search Form -->
+                <form class="search-form" action="search_action" method="GET">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter destination">
+                    <label for="check-in">Check-in:</label>
+                    <input type="date" id="check-in" name="check-in">
+                    <label for="check-out">Check-out:</label>
+                    <input type="date" id="check-out" name="check-out">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            
+            <div class="service">
+                <h3>Flight Deals</h3>
+                <p>Exclusive offers on flights to your favorite locations!</p>
+                <p>Book now and save on your next adventure.</p>
+                    
+                    <!-- Deal Cards -->
+                <div class="deal-card">
+                    <img src="./images/Plane BG.jpg" alt="Flight Deal Image">
+                    <h3>Destination: City, Country</h3>
+                    <p>Price:80000&#8377;</p>
+                    <p>Departure Date: MM/DD/YYYY</p>
+                    <button onclick="window.location.href = 'https://www.goindigo.in/?utm_source=Google_Cpc&utm_medium=Google_search&utm_campaign=Summer_Sale_29May/?cid=Search|P|SummerSale|29May&s_kwcid=AL!12293!3!700912620161!b!!g!!indigo&gad_source=1&gclid=EAIaIQobChMIhKvjk_y1hgMVhhF7Bx2SBwE9EAAYASAAEgIYSfD_BwE'">Book Now</button>
+                </div>
+                    
+                    <!-- Deal Countdown -->
+                <div id="deal-countdown">
+                    <p>Hurry! This deal ends in:</p>
+                    <div id="countdown"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <div class="logo" style="color: darkblue;">Travel<span>Us</span></div>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/prajnaprasad.mahakhud/" class="fa-brands fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/prajna-prasad-mahakhud-7786642b7/" class="fa-brands fa-linkedin"></a>
+                <a href="https://github.com/M-Prajna/OIBSIP" class="fa-brands fa-github"></a>
+                <a href="https://www.instagram.com/_i_m_bitun_/" class="fa-brands fa-square-instagram"></a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <a href="#home">About Us</a>
+              <a href="#contact">Contact</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 TravelUs. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
